@@ -1,0 +1,49 @@
+.body {
+    size-adjust: 50-50;
+    color: #333; 
+    background-color: #0b0303; 
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 250px; 
+    margin: 0 auto;
+    padding: 15px; 
+    background-color: #177e81; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(76, 97, 138, 0.1); 
+}
+
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .message {
+    margin: 10px 0 0;
+    color: black; 
+    font-size: 11px; 
+    font-size: medium;
+}
+
+.container .message a {
+    color: rgb(110, 9, 9);
+    text-decoration: none;
+    font-size: medium;
+}
+
+.container .right-panel-active .signin-signup {
+    right: 20px; 
+    left: auto;
+    transform: translateX(100%);
+    font-size: medium;
+}
+
+.container .right-panel-active .signup-login {
+    right: auto;
+    left: 20px; 
+    transform: translateX(0%);
+    font-size: medium;
+}
